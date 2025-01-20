@@ -1,0 +1,22 @@
+// SpendSmart Flowchart
+digraph {
+	A [label=Start]
+	B [label="User Login"]
+	C [label="Is User Valid?"]
+	D [label="Display Dashboard"]
+	E [label="Show Error Message"]
+	F [label="Track Expense"]
+	G [label="Add Data to Database"]
+	H [label="Display Spending Report"]
+	I [label="Generate Visualization (Chart/Graph)"]
+	J [label=End]
+	A -> B
+	B -> C
+	C -> D [label=Yes]
+	C -> E [label=No]
+	D -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+}
